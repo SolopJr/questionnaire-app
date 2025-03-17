@@ -35,7 +35,7 @@ A page for testing a questionnaire, where users can fill out the questions and v
    First, clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/questionnaire-app.git
+   git clone https://github.com/SolopJr/questionnaire-app
    ```
 
 2. **Install dependencies**
@@ -139,8 +139,7 @@ ________________________________________________________________________________
    Спочатку клонуйте репозиторій на свій локальний комп'ютер:
 
    ```bash
-   git clone https://github.com/yourusername/questionnaire-app.git
-   ```
+   git clone https://github.com/SolopJr/questionnaire-app
 
 2. **Встановити залежності**
 
