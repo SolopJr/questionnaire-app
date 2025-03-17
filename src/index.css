@@ -1,0 +1,144 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.input {
+  width: 100%; /* Встановлює ширину на 100% від контейнера */
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Щоб padding не виходив за межі */
+}
+
+/* Збільшуємо ширину для поля "Questionnaire Name" */
+.name-input {
+  width: 100%; /* Дозволяє полю розтягуватися на всю доступну ширину */
+}
+
+/* Для textarea "Description" */
+.description-input {
+  width: 100%; /* Дозволяє полю розтягуватися на всю доступну ширину */
+  height: 150px; /* Можна задати висоту для textarea */
+}
+.card{
+  Border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);
+  padding: 20px;
+}
+a {
+  font-weight: 500;
+  color: #919191;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #707070;
+}
+.link-header {
+  font-size: 1.2em;
+  border: 1px solid transparent;
+  border-color: #707070;
+  background-color: #1a1a1a;
+  margin-right: 10px;
+  box-sizing: border-box;
+  padding: 3px;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+ul {
+  list-style-type: none; /* Видаляє стандартні точки */
+  padding: 0; /* Видаляє відступи */
+  margin: 0; /* Видаляє зовнішні відступи */
+  display: flex; /* Використовуємо flexbox для горизонтального розташування */
+  flex-wrap: wrap; /* Дозволяє елементам переламуватися на наступний рядок */
+}
+
+li {
+  margin-right: 20px; /* Відступ між елементами */
+  flex-basis: calc(33.33% - 20px); /* Оцінка ширини для кожного елемента */
+  min-width: 350px; /* Мінімальна ширина кожного елемента */
+  box-sizing: border-box; /* Для точного розрахунку ширини з урахуванням відступів */
+}
+.pagination-container {
+  display: flex;
+  justify-content: center; /* Вирівнює кнопки по горизонталі */
+  align-items: center; /* Вирівнює кнопки по вертикалі */
+  margin-top: 20px; /* Відступ зверху, щоб кнопки не приклеювались до вмісту */
+}
+
+.page-button {
+  padding: 10px 20px; /* Відступи всередині кнопки для покращення вигляду */
+  margin: 0 10px; /* Відступи між кнопками */
+  background-color: #007bff; /* Колір фону */
+  color: white; /* Колір тексту */
+  border: none; /* Без обведення */
+  border-radius: 5px; /* Заокруглені кути */
+  cursor: pointer; /* Курсор при наведенні */
+}
+
+.page-button:disabled {
+  background-color: #cccccc; /* Змінює колір кнопки, коли вона вимкнена */
+  cursor: not-allowed; /* Курсор для вимкнених кнопок */
+}
+.fixed-top-left {
+  position: sticky; 
+  top: 0; /* Відстань від верхньої частини екрану */
+  left: 0; /* Відстань від лівого краю екрану */
+  z-index: 1000; /* Забезпечує, що елемент буде на передньому плані */
+  padding: 10px; /* Відступи навколо елемента */
+  border-radius: 5px; /* Заокруглені кути для елемента */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для кращого вигляду */
+  background-color: #242424;
+}
